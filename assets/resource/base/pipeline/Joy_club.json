@@ -110,10 +110,10 @@
         "recognition": "TemplateMatch",
         "template": "Joy_club/get.png",
         "roi": [
-            1094,
-            48,
-            133,
-            108
+            1069,
+            345,
+            175,
+            103
         ],
         "threshold": 0.9,
         "action": "Click",
@@ -149,11 +149,70 @@
         "recognition": "TemplateMatch",
         "template": "Joy_club/done.png",
         "roi": [
-            1101,
-            63,
-            101,
-            61
+            1083,
+            325,
+            162,
+            133
         ],
+        "method": 10001,
+        "threshold": 0.9,
+        "next": [
+            "joy_club_draw",
+            "joy_club_draw_done"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "joy_club_draw": {
+        "recognition": "TemplateMatch",
+        "template": "Joy_club/draw.png",
+        "roi": [
+            1049,
+            51,
+            175,
+            98
+        ],
+        "method": 10001,
+        "threshold": 0.9,
+        "action": "Click",
+        "next": [
+            "joy_club_close_draw_award",
+            "joy_club_draw_done"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0,
+        "post_wait_freezes": 200
+    },
+    "joy_club_close_draw_award": {
+        "recognition": "TemplateMatch",
+        "template": "Joy_club/x.png",
+        "roi": [
+            1138,
+            21,
+            96,
+            88
+        ],
+        "action": "Click",
+        "next": [
+            "joy_club_draw",
+            "joy_club_close_draw_award",
+            "joy_club_draw_done"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0,
+        "post_wait_freezes": 200
+    },
+    "joy_club_draw_done": {
+        "recognition": "TemplateMatch",
+        "template": "Joy_club/draw_done.png",
+        "roi": [
+            1049,
+            51,
+            175,
+            98
+        ],
+        "method": 10001,
+        "threshold": 0.9,
         "next": [
             "joy_club_quit"
         ],
