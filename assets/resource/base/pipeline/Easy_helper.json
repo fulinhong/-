@@ -187,10 +187,10 @@
         "recognition": "TemplateMatch",
         "template": "Easy_helper/check_in_log_on.png",
         "roi": [
-            491,
-            21,
+            488,
+            14,
             177,
-            106
+            108
         ],
         "method": 10001,
         "threshold": 0.95,
@@ -285,7 +285,8 @@
         "threshold": 0.85,
         "action": "Click",
         "next": [
-            "easy_helper_sweep"
+            "easy_helper_sweep",
+            "easy_helper_privilege_undone"
         ],
         "pre_delay": 0,
         "post_delay": 0,
@@ -293,6 +294,16 @@
         "focus": "[color:DeepSkyBlue]轻松特权未完成[/color]"
     },
     "easy_helper_sweep": {
+        "recognition": "TemplateMatch",
+        "template": "Easy_helper/check_in_easy_helper_privilege.png",
+        "roi": [
+            661,
+            11,
+            187,
+            113
+        ],
+        "method": 10001,
+        "threshold": 0.95,
         "next": [
             "check_no_easy_helper_sweep",
             "[JumpBack]get_easy_helper_sweep"
