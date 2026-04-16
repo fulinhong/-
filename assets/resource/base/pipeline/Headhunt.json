@@ -148,12 +148,15 @@
     },
     "headhunt_recruit_no_free": {
         "recognition": "TemplateMatch",
-        "template": "Headhunt/no_free_headhunt_2.png",
+        "template": [
+            "Headhunt/no_free_headhunt_2.png",
+            "Headhunt/no_free_headhunt_2_1.png"
+        ],
         "roi": [
-            679,
+            624,
             508,
-            318,
-            138
+            427,
+            143
         ],
         "next": [
             "top_secret_treasure_box_undone",
@@ -166,12 +169,15 @@
     },
     "headhunt_recruit": {
         "recognition": "TemplateMatch",
-        "template": "Headhunt/recruit_done_2.png",
+        "template": [
+            "Headhunt/recruit_done_2.png",
+            "Headhunt/free_headhunt_1.png"
+        ],
         "roi": [
-            679,
+            624,
             508,
-            318,
-            138
+            427,
+            143
         ],
         "threshold": 0.6,
         "action": "Click",
