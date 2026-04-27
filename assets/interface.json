@@ -163,6 +163,7 @@
             "entry": "mission_office",
             "description": "目前仅能接三个任务,不会刷新。买了超影要拿满奖励请手动完成",
             "option": [
+                "任务集会所超影处理(beta)",
                 "从奖励中心进入",
                 "忍界指引寻找任务集会所"
             ],
@@ -2637,6 +2638,26 @@
                                 "sky_battlefield",
                                 "sky_ground_settlement",
                                 "sky_ground_not_open"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "任务集会所超影处理(beta)": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "No"
+                },
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "check_no_mission_office_award": {
+                            "next": [
+                                "[JumpBack]celebrate_mission_office_award",
+                                "mission_office_above_kage",
+                                "mission_office_get_mission"
                             ]
                         }
                     }
