@@ -728,7 +728,7 @@
             "close_mission_and_back_main_screen"
         ],
         "post_wait_freezes": 400,
-        "focus": "[color:DeepSkyBlue]确认无奖励看领取[/color]"
+        "focus": "[color:DeepSkyBlue]确认无奖励可领取[/color]"
     },
     "close_mission_and_back_main_screen": {
         "recognition": "OCR",

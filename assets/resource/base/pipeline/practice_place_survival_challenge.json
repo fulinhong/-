@@ -426,13 +426,13 @@
     },
     "survival_challenge_sweep_ticket_used_up": {
         "recognition": "TemplateMatch",
+        "template": "Practice_place/sweep_ticket_used_up.png",
         "roi": [
             469,
             219,
             316,
             217
         ],
-        "template": "Practice_place/sweep_ticket_used_up.png",
         "pre_delay": 0,
         "post_delay": 0,
         "next": "back_main_screen_and_stop",

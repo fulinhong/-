@@ -20,13 +20,13 @@
         ],
         "action": "Click",
         "green_mask": true,
-        "pre_delay": 0,
-        "post_delay": 200,
         "next": [
             "liveness_award_in_center_enter",
             "liveness_award_not_in_center_enter",
             "liveness_award_undone"
         ],
+        "pre_delay": 0,
+        "post_delay": 200,
         "post_wait_freezes": 200
     },
     "liveness_award_in_center_enter": {
@@ -45,7 +45,7 @@
         ],
         "pre_delay": 0,
         "post_delay": 0,
-        "post_wait_freezes": 200
+        "post_wait_freezes": 300
     },
     "liveness_award_not_in_center_enter": {
         "recognition": "TemplateMatch",
@@ -280,7 +280,7 @@
             "weekly_liveness_award_undone",
             "weekly_liveness_award_done"
         ],
-        "pre_delay": 0,
+        "pre_delay": 100,
         "post_delay": 0,
         "post_wait_freezes": 200
     },
