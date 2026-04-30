@@ -543,7 +543,14 @@
     "rebel_ninja_in_battlefield": {
         "recognition": "OCR",
         "expected": [
-            "迎击叛忍"
+            "迎击",
+            "叛忍"
+        ],
+        "replace": [
+            [
+                "忍",
+                "烫"
+            ]
         ],
         "roi": [
             538,
@@ -562,7 +569,14 @@
     "rebel_ninja_not_find_enemy": {
         "recognition": "OCR",
         "expected": [
-            "迎击叛忍"
+            "迎击",
+            "叛忍"
+        ],
+        "replace": [
+            [
+                "忍",
+                "烫"
+            ]
         ],
         "roi": [
             538,
@@ -673,7 +687,14 @@
     "rebel_ninja_find_enemy": {
         "recognition": "OCR",
         "expected": [
-            "迎击叛忍"
+            "迎击",
+            "叛忍"
+        ],
+        "replace": [
+            [
+                "忍",
+                "烫"
+            ]
         ],
         "roi": [
             538,
