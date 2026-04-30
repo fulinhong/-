@@ -554,6 +554,7 @@
         "next": [
             "rebel_ninja_high_enemy",
             "[JumpBack]rebel_ninja_find_enemy",
+            "[JumpBack]rebel_ninja_find_back_enemy",
             "rebel_ninja_not_find_enemy"
         ],
         "focus": "[color:DeepSkyBlue]准备战斗[/color]"
@@ -570,6 +571,35 @@
             116
         ],
         "focus": "[color:tomato]找不到敌人,可能原因有识别阈值不够;目标敌人不在摇杆的右边;被组织成员遮挡[/color]"
+    },
+    "rebel_ninja_find_back_enemy": {
+        "recognition": "OCR",
+        "expected": [
+            "高级"
+        ],
+        "roi": [
+            0,
+            103,
+            872,
+            343
+        ],
+        "action": "Swipe",
+        "begin": [
+            217,
+            548,
+            1,
+            1
+        ],
+        "end": [
+            39,
+            550,
+            1,
+            1
+        ],
+        "max_hit": 10,
+        "duration": 800,
+        "post_delay": 1500,
+        "focus": "[color:DeepSkyBlue]那我再看看我后面[/color]"
     },
     "rebel_ninja_only_me": {
         "recognition": "TemplateMatch",

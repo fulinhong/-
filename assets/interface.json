@@ -2820,12 +2820,16 @@
             "type": "select",
             "cases": [
                 {
-                    "name": "高级",
-                    "pipeline_override": {}
+                    "name": "高级"
                 },
                 {
                     "name": "中级",
                     "pipeline_override": {
+                        "rebel_ninja_find_back_enemy": {
+                            "expected": [
+                                "中级"
+                            ]
+                        },
                         "rebel_ninja_in_battlefield": {
                             "next": [
                                 "rebel_ninja_mid_enemy",
@@ -2837,6 +2841,11 @@
                 {
                     "name": "低级",
                     "pipeline_override": {
+                        "rebel_ninja_find_back_enemy": {
+                            "expected": [
+                                "低级"
+                            ]
+                        },
                         "rebel_ninja_in_battlefield": {
                             "next": [
                                 "rebel_ninja_low_enemy",
