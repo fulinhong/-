@@ -371,7 +371,8 @@
     "hundred_ninja_in_match": {
         "recognition": "OCR",
         "expected": [
-            "0"
+            "0",
+            "匹配中"
         ],
         "roi": [
             555,
@@ -381,6 +382,7 @@
         ],
         "post_delay": 900,
         "next": [
+            "hundred_ninja_in_match",
             "hundred_ninja_not_in_match"
         ],
         "timeout": 60000
@@ -388,7 +390,8 @@
     "hundred_ninja_not_in_match": {
         "recognition": "OCR",
         "expected": [
-            "0"
+            "0",
+            "匹配中"
         ],
         "roi": [
             555,
