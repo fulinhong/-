@@ -66,6 +66,308 @@
         ],
         "post_delay": 900
     },
+    "hundred_ninja_check_point": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Hundred_ninja/mission.png"
+        ],
+        "roi": [
+            1113,
+            197,
+            166,
+            522
+        ],
+        "action": "Click",
+        "next": [
+            "hundred_ninja_in_mission_book",
+            "hundred_ninja_check_point"
+        ],
+        "pre_delay": 0,
+        "post_delay": 800
+    },
+    "hundred_ninja_in_mission_book": {
+        "recognition": "TemplateMatch",
+        "template": "More_gameplay/point_text.png",
+        "roi": [
+            192,
+            587,
+            81,
+            56
+        ],
+        "threshold": 0.9,
+        "next": [
+            "hundred_ninja_complete",
+            "hundred_ninja_back_fight"
+        ],
+        "pre_delay": 100,
+        "post_delay": 0
+    },
+    "hundred_ninja_complete": {
+        "recognition": "TemplateMatch",
+        "template": "More_gameplay/complete.png",
+        "roi": [
+            249,
+            575,
+            177,
+            79
+        ],
+        "threshold": 0.95,
+        "next": [
+            "back_main_screen_and_stop"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "hundred_ninja_back_fight": {
+        "recognition": "TemplateMatch",
+        "template": "Hundred_ninja/match.png",
+        "roi": [
+            1169,
+            602,
+            75,
+            66
+        ],
+        "action": "Swipe",
+        "duration": 50,
+        "next": [
+            "hundred_ninja_in_match",
+            "[JumpBack]hundred_ninja_back_fight"
+        ],
+        "post_delay": 900
+    },
+    "hundred_ninja_award": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "More_gameplay/award.png",
+            "More_gameplay/pre_award.png"
+        ],
+        "roi": [
+            434,
+            570,
+            674,
+            93
+        ],
+        "action": "Click",
+        "next": [
+            "hundred_ninja_get_award_one_key",
+            "hundred_ninja_award_done",
+            "hundred_ninja_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0,
+        "post_wait_freezes": 300
+    },
+    "hundred_ninja_get_award_one_key": {
+        "recognition": "TemplateMatch",
+        "template": "SharedNode/one_key_get.png",
+        "roi": [
+            414,
+            406,
+            222,
+            98
+        ],
+        "action": "Click",
+        "next": [
+            "hundred_ninja_get_award_one_key",
+            "hundred_ninja_award_done"
+        ],
+        "pre_delay": 0,
+        "pre_wait_freezes": 200,
+        "post_delay": 300
+    },
+    "hundred_ninja_award_done": {
+        "recognition": "TemplateMatch",
+        "template": "More_gameplay/award_done.png",
+        "roi": [
+            1024,
+            582,
+            83,
+            76
+        ],
+        "next": [
+            "close_hundred_ninja_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "close_hundred_ninja_award": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Hundred_ninja/close_mission.png"
+        ],
+        "roi": [
+            1135,
+            330,
+            144,
+            360
+        ],
+        "method": 10001,
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "hundred_ninja_achievement_award",
+            "close_hundred_ninja_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 900
+    },
+    "hundred_ninja_achievement_award": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Hundred_ninja/achievement.png"
+        ],
+        "roi": [
+            1135,
+            330,
+            144,
+            360
+        ],
+        "method": 10001,
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "hundred_ninja_in_achievement_award",
+            "hundred_ninja_achievement_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 900
+    },
+    "hundred_ninja_in_achievement_award": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Hundred_ninja/in_achievement.png"
+        ],
+        "roi": [
+            298,
+            43,
+            303,
+            404
+        ],
+        "next": [
+            "hundred_ninja_get_achievement_award",
+            "hundred_ninja_achievement_award_celebreate",
+            "hundred_ninja_achievement_award_done"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "hundred_ninja_get_achievement_award": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Hundred_ninja/get.png"
+        ],
+        "roi": [
+            664,
+            95,
+            155,
+            560
+        ],
+        "method": 10001,
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "hundred_ninja_get_achievement_award_one_key",
+            "hundred_ninja_achievement_award_celebreate",
+            "hundred_ninja_get_achievement_award",
+            "hundred_ninja_achievement_award_done"
+        ],
+        "pre_delay": 100,
+        "post_delay": 300
+    },
+    "hundred_ninja_achievement_award_celebreate": {
+        "recognition": "OCR",
+        "expected": [
+            "恭喜",
+            "你获得"
+        ],
+        "roi": [
+            449,
+            105,
+            400,
+            175
+        ],
+        "action": "Click",
+        "next": [
+            "hundred_ninja_achievement_award_celebreate",
+            "hundred_ninja_get_achievement_award",
+            "hundred_ninja_achievement_award_done"
+        ],
+        "pre_delay": 100,
+        "post_delay": 400
+    },
+    "hundred_ninja_get_achievement_award_one_key": {
+        "recognition": "TemplateMatch",
+        "template": "SharedNode/one_key_get.png",
+        "roi": [
+            414,
+            406,
+            222,
+            98
+        ],
+        "action": "Click",
+        "next": [
+            "hundred_ninja_get_achievement_award_one_key",
+            "hundred_ninja_achievement_award_celebreate",
+            "hundred_ninja_achievement_award_done"
+        ],
+        "pre_delay": 0,
+        "post_delay": 500
+    },
+    "hundred_ninja_achievement_award_done": {
+        "recognition": "TemplateMatch",
+        "template": "Hundred_ninja/get.png",
+        "roi": [
+            664,
+            95,
+            155,
+            560
+        ],
+        "inverse": true,
+        "method": 10001,
+        "threshold": 0.95,
+        "next": [
+            "close_hundred_ninja_achievement_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "close_hundred_ninja_achievement_award": {
+        "recognition": "TemplateMatch",
+        "template": "Hundred_ninja/close_mission.png",
+        "roi": [
+            1135,
+            330,
+            144,
+            360
+        ],
+        "method": 10001,
+        "threshold": 0.95,
+        "action": "Click",
+        "next": [
+            "hundred_ninja_quit",
+            "close_hundred_ninja_achievement_award"
+        ],
+        "pre_delay": 0,
+        "post_delay": 900
+    },
+    "hundred_ninja_quit": {
+        "recognition": "TemplateMatch",
+        "template": "Hundred_ninja/quit.png",
+        "roi": [
+            1158,
+            0,
+            121,
+            118
+        ],
+        "green_mask": true,
+        "action": "Click",
+        "next": [
+            "hundred_ninja_quit",
+            "back_main_screen_and_stop"
+        ],
+        "pre_delay": 0,
+        "post_delay": 400
+    },
     "hundred_ninja_in_match": {
         "recognition": "OCR",
         "expected": [
@@ -117,7 +419,8 @@
         ],
         "post_delay": 900,
         "next": [
-            "hundred_ninja_out_entrance_animation"
+            "hundred_ninja_out_entrance_animation",
+            "hundred_ninja_entrance_animation"
         ],
         "focus": "[color:DeepSkyBlue]百忍进场动画[/color]"
     },
