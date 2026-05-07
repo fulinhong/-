@@ -118,21 +118,19 @@
             "close_ninja_book_qq_share"
         ],
         "pre_delay": 0,
-        "pre_wait_freezes": 1000,
-        "post_wait_freezes": 1000,
-        "post_delay": 2000
+        "post_delay": 700,
+        "focus": "[color:DeepSkyBlue]qq分享[/color]"
     },
     "close_ninja_book_qq_share": {
         "action": "StopApp",
         "package": "com.tencent.mobileqq",
         "next": [
-            "ninja_book_close_share_top_bar",
-            "ninja_book_quit_x"
+            "ninja_book_quit_x",
+            "ninja_book_close_share_top_bar"
         ],
-        "pre_wait_freezes": 1000,
-        "post_wait_freezes": 1000,
-        "post_delay": 2000,
-        "focus": "[color:DeepSkyBlue]关闭分享[/color]"
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "focus": "[color:DeepSkyBlue]关闭qq分享[/color]"
     },
     "ninja_book_share_to_wechat": {
         "recognition": "TemplateMatch",
@@ -150,25 +148,24 @@
             "ninja_book_share_back_to_natuto",
             "close_ninja_book_wechat_share"
         ],
-        "pre_wait_freezes": 1000,
-        "post_wait_freezes": 1000,
-        "post_delay": 2000
+        "pre_delay": 0,
+        "post_delay": 700,
+        "focus": "[color:DeepSkyBlue]微信分享[/color]"
     },
     "close_ninja_book_wechat_share": {
         "action": "StopApp",
         "package": "com.tencent.mm",
         "next": [
             "ninja_book_quit_x",
-            "ninja_book_close_share_top_bar",
             "close_ninja_book_leaderboard",
             "[JumpBack]ninja_book_mission_undone",
             "[JumpBack]ninja_book_mission_done",
             "ninja_book_close_share",
+            "ninja_book_close_share_top_bar",
             "ninja_book_share_without_x"
         ],
-        "pre_wait_freezes": 1000,
-        "post_wait_freezes": 1000,
-        "post_delay": 2000,
+        "pre_delay": 1000,
+        "post_delay": 1000,
         "focus": "[color:DeepSkyBlue]关闭分享[/color]"
     },
     "ninja_book_close_share_top_bar": {

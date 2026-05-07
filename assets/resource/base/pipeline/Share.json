@@ -230,9 +230,9 @@
             "share_in_main_screen",
             "close_share_top_bar"
         ],
-        "focus": "[color:DeepSkyBlue]关闭微信[/color]",
         "pre_delay": 1000,
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": "[color:DeepSkyBlue]关闭微信[/color]"
     },
     "close_qq_app": {
         "action": "StopApp",

@@ -189,7 +189,7 @@
                 "宝匣挑战",
                 "忍法帖礼盒"
             ],
-            "description": "[size:15][color:tomato]开启后会领取忍法帖升级的全部奖励，需要攒体验卡的不要用！[/color][/size]",
+            "description": "[size:15][color:tomato]微信忍法帖分享可能会出现无法退出的bug,这种情况不保证能正常处理[/color][/size]",
             "default_check": true
         },
         {
