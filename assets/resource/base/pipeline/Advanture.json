@@ -300,6 +300,7 @@
         ],
         "next": [
             "check_not_in_auto_fight",
+            "advanture_in_fight",
             "[JumpBack]advanture_anime_skip",
             "[JumpBack]advanture_end_anime",
             "advanture_win",
